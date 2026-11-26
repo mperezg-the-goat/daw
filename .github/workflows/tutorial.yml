@@ -1,0 +1,13 @@
+name: tutorial-bis
+
+on: 
+  push:
+    branches: [ "main" ]
+
+jobs:
+ holamundo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Hola mundo"
+      
